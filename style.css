@@ -36,28 +36,31 @@ body {
 }
 
 #container-info {
-position: absolute;
-width: 60%;
-height: 70%;
-top: 27%;
-left: 20%;
-background-color: rgba(0, 0, 0, 0.787);
-color: white;
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 27%;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.787);
+    color: white;
 
-border-radius: 2em;
+    animation-name: slideStats;
+    animation-duration: 6s;
+
+    border-radius: 2em;
 
 }
 
 #player-stats {
-position: absolute;
-width: 40%;
-height: 50%;
-top: 10%;
-left: 5%;
-background-color: rgba(231, 20, 20, 0.623);
-color: white;
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(231, 20, 20, 0.623);
+    color: white;
 
-border-radius: 2em;
+    border-radius: 2em;
 }
 
 .hideInfo {
@@ -89,6 +92,7 @@ border-radius: 2em;
 
     text-align: center;
 
+ 
     border-radius: 2em;   
 }
 
@@ -97,10 +101,15 @@ border-radius: 2em;
 }
 .center-table {
 
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .spacing-top {
     padding-top: 1em;
+}
+
+@keyframes slideStats {
+    from {left: -1000px;}
+    to {left: 289px;}
 }
