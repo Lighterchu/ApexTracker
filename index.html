@@ -11,17 +11,64 @@
     <div id="title">
         <h1>Apex Legends Tracker</h1>
     </div>
-    <div id=container>
+    <div id=container-search>
         <div id=tracker-title>
             <h3>Enter player details</h3>
         </div>
-        <div id="tracker-form">
+        <div id="tracker-form" class="center spacing-top">
+            <label for="userName">Players Name</label>
+            <input type="text" name="username" id="userName" placeholder="Enter name " value=""><br><br>
             
-            <input type="text" name="username" id="" placeholder="Enter name ">
-            <button>search</button>
-            
+            <label for="platform">Choose platform:</label>
+
+            <select name="platform" id="all-platforms">
+            <option value="PC">PC</option>
+            <option value="PS4">PlayStation 4</option>
+            <option value="X1">Xbox One</option>
+            </select>
+            <button id="search-button">search</button>
         </div>
     </div>
+    <div id="container-info" class="hideInfo">
+        <div id="player-stats">
+            <table class="center-table">
+                <tr>
+                  <td>Player:</td>
+                  <td id="player"></td>
+                </tr>
+                <tr>
+                    <td>Most Used Champion:</td>
+                    <td id="champ"></td>
+                  </tr>
+                <tr>
+                    <td>Total Kills:</td>
+                    <td id="kills"></td>
+                </tr>
+                <tr>
+                    <td>Level:</td>
+                    <td id="level"></td>
+                </tr>
+                <tr>
+                    <td>BattlePass:</td>
+                    <td id="battle-pass"></td>
+                </tr>
+                <tr>
+                    <td>Rank:</td>
+                    <td id="rank"></td>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <div id="errorMessge" class="hideInfo">
+        <h1>That user was not found </h1>
+        <h1>make sure you got the right platform to</h1>
+    </div>
+    <div id="searchingUser" class="hideInfo">
+        <h1>Searching...</h1>
+    </div>
+    
+    
+
     <script src="index.js"></script>
 </body>
 </html>

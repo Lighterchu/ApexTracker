@@ -18,11 +18,11 @@ body {
     text-align: center;
 }
 
-#container {
+#container-search {
     position: absolute;
     width: 40%;
     height: 20%;
-    top: 20%;
+    top: 5%;
     left: 30%;
     background-color: rgba(0, 0, 0, 0.787);
     color: white;
@@ -31,10 +31,76 @@ body {
 
   }
 
-  #tracker-title {
-      text-align: center;
-  }
+#tracker-title {
+    text-align: center;
+}
 
-  .hideInfo {
-      display: block;
-  }
+#container-info {
+position: absolute;
+width: 60%;
+height: 70%;
+top: 27%;
+left: 20%;
+background-color: rgba(0, 0, 0, 0.787);
+color: white;
+
+border-radius: 2em;
+
+}
+
+#player-stats {
+position: absolute;
+width: 40%;
+height: 50%;
+top: 10%;
+left: 5%;
+background-color: rgba(231, 20, 20, 0.623);
+color: white;
+
+border-radius: 2em;
+}
+
+.hideInfo {
+    display: none;
+}
+
+#errorMessge  {
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 27%;
+    left: 20%;
+    background-color: rgba(233, 16, 16, 0.986);
+    color: white;
+
+    text-align: center;
+
+    border-radius: 2em;
+}
+
+#searchingUser {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    top: 27%;
+    left: 35%;
+    background-color: rgba(16, 233, 125, 0.678);
+    color: rgb(228, 236, 234);
+
+    text-align: center;
+
+    border-radius: 2em;   
+}
+
+.center {
+    text-align: center;
+}
+.center-table {
+
+margin-left: auto;
+margin-right: auto;
+    
+}
+.spacing-top {
+    padding-top: 1em;
+}
