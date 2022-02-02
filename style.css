@@ -45,7 +45,7 @@ body {
     color: white;
 
     animation-name: slideStats;
-    animation-duration: 6s;
+    animation-duration: 2s;
 
     border-radius: 2em;
 
@@ -67,12 +67,36 @@ body {
     display: none;
 }
 
+#rank-img {
+  display: block;
+  margin-left: 17%;
+  margin-right: auto;
+  
+
+ 
+
+
+  width: 15%;
+}
+
+#champ-img {
+    position: relative;
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    
+
+    
+    width: 45%;
+    
+  }
+
 #errorMessge  {
     position: absolute;
-    width: 60%;
-    height: 20%;
+    width: 30%;
+    height: 10%;
     top: 27%;
-    left: 20%;
+    left: 35%;
     background-color: rgba(233, 16, 16, 0.986);
     color: white;
 
