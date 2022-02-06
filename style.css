@@ -57,7 +57,7 @@ body {
     position: absolute;
     width: 40%;
     height: 50%;
-    top: 10%;
+    top: 5%;
     left: 5%;
     background-color: rgba(231, 20, 20, 0.623);
     color: white;
@@ -69,21 +69,25 @@ body {
     display: none;
 }
 
-#rank-img {
-  display: block;
-  margin-left: 17%;
-  margin-right: auto;
-  width: 15%;
+#champ-container img {
+    position: absolute;
+    padding-left: 45%;
+    width: 600px;
+    
+    
+}  
+
+
+#rank-container {
+    position: absolute;
+    padding-top: 45%;
+    padding-left: 20%;
+    
+    
 }
 
-#champ-img {
-    position: relative;
-    display: block;
-    margin-left: 50%;
-    margin-right: auto;
-    width: 45%;
-    
-  }
+
+
 
 #errorMessge  {
     position: absolute;

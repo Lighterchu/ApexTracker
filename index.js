@@ -20,12 +20,12 @@ const searchUserinfo = (e) => {
     let userPlatform = platform.value
     let playerName = userName.value 
 
-    console.log(`user: ${playerName}`)
+    // console.log(`user: ${playerName}`)
     console.log(`platform: ${userPlatform}`)
     fetchingData(userPlatform,playerName)
     //resetting the data
-    userPlatform = ""
-    playerName = ""
+    //userPlatform = ""
+    
     
 }
 
@@ -34,6 +34,7 @@ const fetchingData = (userPlatform, player) => {
     .then(resp => resp.json())
     .then(resp => ShowResponse(resp))
     .catch(err => ErrorMessage(err))
+    userName.value = ""
 }
 
 
@@ -77,7 +78,7 @@ const showInfoBox = (bool) => {
 }
 
 const showRankImage = (rankImg) => {
-    const container = document.getElementById('container-info')
+    const container = document.getElementById('rank-container')
     const newRankImg = document.createElement('img')
     newRankImg.id = "rank-img"
     newRankImg.src = rankImg
@@ -121,7 +122,7 @@ const showPlayerData = (info) => {
 
     player.textContent = info.global.name
     champ.textContent = info.legends.selected.LegendName
-    kills.textContent = info.total.kills.value
+    kills.textContent = info.legends.selected.data[0].value
     level.textContent = info.global.level
     battlePass.textContent = info.global.battlepass.level
     rank.textContent = `${rankName} and div ${rankDiv} `
