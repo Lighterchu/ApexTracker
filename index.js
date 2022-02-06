@@ -92,6 +92,8 @@ const showChampImage = (champImg) => {
     container.append(newChampImg)
 }
 
+
+
 const ShowResponse = (info) => {
     if(info.Error) {
         ErrorMessage(info.Error)
@@ -100,6 +102,13 @@ const ShowResponse = (info) => {
     showError.classList.add('hideInfo')
     searchingUser(true)
     showInfoBox(true)
+    showPlayerData(info)
+    showRankImage(info.global.rank.rankImg)
+    showChampImage(info.legends.selected.ImgAssets.icon)
+    
+}
+
+const showPlayerData = (info) => {
     const player = document.getElementById('player');
     const champ = document.getElementById('champ');
     const kills = document.getElementById('kills');
@@ -116,10 +125,8 @@ const ShowResponse = (info) => {
     level.textContent = info.global.level
     battlePass.textContent = info.global.battlepass.level
     rank.textContent = `${rankName} and div ${rankDiv} `
-    showRankImage(info.global.rank.rankImg)
-    showChampImage(info.legends.selected.ImgAssets.icon)
-    
 }
+
 
 
 const ResetPageInfo = () => {
@@ -135,3 +142,12 @@ const ResetPageInfo = () => {
 
 
 searchButton.addEventListener('click',searchUserinfo)
+userName.addEventListener('keyup',(e) =>{
+    // Number 13 is the "Enter" key on the keyboard
+    if (e.keyCode === 13) {
+      console.log("searching")
+      searchUserinfo(e)
+      e.preventDefault();
+     
+    }
+  })

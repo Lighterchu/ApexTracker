@@ -38,6 +38,8 @@ body {
 #container-info {
     position: absolute;
     width: 60%;
+    max-width: 60%;
+    min-width: 20%;
     height: 70%;
     top: 27%;
     left: 20%;
@@ -71,11 +73,6 @@ body {
   display: block;
   margin-left: 17%;
   margin-right: auto;
-  
-
- 
-
-
   width: 15%;
 }
 
@@ -84,9 +81,6 @@ body {
     display: block;
     margin-left: 50%;
     margin-right: auto;
-    
-
-    
     width: 45%;
     
   }
